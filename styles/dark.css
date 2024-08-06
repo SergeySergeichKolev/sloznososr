@@ -1,0 +1,15 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_dark {
+  --red-pink: #ff0070;
+  --bg-site: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
+  --title: #db00ff ;
+  --nav-color: #ff0070;
+  --text-color: #f1b2ce;
+  --article-title:#000028;
+}

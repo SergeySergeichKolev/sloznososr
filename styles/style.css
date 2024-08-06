@@ -1,0 +1,270 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  background: var(--bg-site);
+  font-family: 'IBM Plex mono', sans-serif;
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.header{
+ width: 1024px;
+ height: 768px;
+ border: 1px solid red;
+ margin: auto;
+ background: var(--bg-image);
+ background-size: cover;
+}
+
+.header__theme-menu{
+  border: 1px solid yellow;
+  width: 230px;
+  height: 26px;
+  margin: auto;
+}
+
+.header__theme-menu-list{
+  display: flex;
+  justify-content: space-between; /*по горизонтали*/
+  align-items: center; /*по вертикали*/
+}
+
+.header__title{
+  border: 1px solid yellow;
+  font-size: 157px;
+  font-weight: bold;
+  line-height: 82.5%;
+  color: #DB00FF;
+  text-shadow: 5px 5px 0 #FF0070;
+  margin-top: 273px;
+  margin-bottom: 114px;
+}
+
+.header__text{
+  width: 491px;
+  border: 1px solid yellow;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23.4px;
+  color: #000028;
+  background: var(--red-pink);
+  margin-left: 513px;
+}
+
+
+.focus{
+  width: 1024px;
+  height: 508px;
+  border: 1px solid red;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.section-title{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23.4px;
+  color: #ff0070;
+}
+
+.article__title{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23.4px;
+  color: #000028;
+  background: #ff0070;
+}
+
+.article__text{
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 23.4px;
+  color: #f1b2ce;
+}
+
+
+.concentration{
+  width: 1024px;
+  height: 496px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+.concentration__articles{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.recomendations{
+  width: 1024px;
+  height: 1015px;
+  border: 1px solid red;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.gallery{
+  width: 1024px;
+  height: 1091px;
+  border: 1px solid red;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "img1 img1 img2"
+                       "img3 img4 img2"
+                       "img3 img5 img5"
+}
+
+.sunset{
+  width: 649px;
+  height: 260px;
+  grid-area: img1;
+}
+
+.ice-cream{
+  width: 315px;
+  height: 595px;
+  grid-area: img2;
+  object-fit: cover;
+}
+
+.tape{
+  width: 315px;
+  height: 768px;
+  grid-area: img3;
+  object-fit: cover;
+}
+
+.books{
+  width: 315px;
+  height: 315px;
+  grid-area: img4;
+}
+
+.street{
+  width: 649px;
+  height: 428px;
+  grid-area: img5;
+}
+
+
+.footer{
+  width: 1024px;
+  height: 768px;
+  border: 1px solid red;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title{
+  color: #DB00FF;
+  line-height: 82.5%;
+  font-size: 157px;
+  font-weight: bold;
+  text-shadow: 5px 5px 0 #FF0070;
+}
+
+/*планшетная версия*/
+
+@media (width < 1024px){
+  
+  .header{
+ width: 768px;
+ height: 1024px;
+}
+
+.header__theme-menu{
+  
+  width: 70px;
+  height: 98px;
+  margin-top: 192px;
+  margin-left: 678px;
+
+  
+}
+
+.header__theme-menu-list{
+  
+  flex-direction: column;
+  
+}
+
+.header__title{
+  font-size: 120px;
+  margin-top: 173px;
+  margin-bottom: 162px;
+}
+
+.header__text{
+  width: 364px;
+  margin-left: 384px;
+}
+
+
+.focus{
+  width: 768px;
+  height: 648px;
+}
+
+.concentration{
+  width: 728px;
+  height: 675px;
+}
+
+.concentration__articles{
+  grid-template-columns: 1fr;
+}
+
+
+}
+
+
+/*телефонная версия версия*/
+
+@media (width < 768px){
+
+  .header{
+ width: 375px;
+ height: 668px;
+}
+
+.header__theme-menu{
+  
+  
+  margin-top: 75px;
+  margin-left: 295px;
+
+}
+
+
+.header__title{
+  font-size: 116px;
+  margin-top: 65px;
+  margin-bottom: 55px;
+}
+
+.header__text{
+  width: 355px;
+  margin-left: 10px;
+}
+
+.focus{
+  width: 375px;
+  height: 949px;
+  grid-template-columns: 1fr;
+}
+
+.concentration{
+  width: 375px;
+  height: 1119px;
+}
+
+.concentration__articles{
+  grid-template-columns: 1fr;
+}
+
+  
+}

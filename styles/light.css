@@ -1,0 +1,15 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_light {
+  --red-pink: #ff8dcb;
+  --bg-site: #fff1f7;
+  --bg-image: url(../images/cover-image-light.png);
+  --title: #ffc2e6;
+  --nav-color: #353430;
+  --text-color: #353440;
+  --article-title:#353440;
+}
